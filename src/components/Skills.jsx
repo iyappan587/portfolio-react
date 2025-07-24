@@ -1,0 +1,62 @@
+import React from "react";
+
+function Skills() {
+  const Skill = [
+    { image: "html5", animate: "animate-logo-puls", imageName: "HTML" },
+    { image: "css3", animate: "animate-logo-puls", imageName: "CSS" },
+    {
+      image: "javascript",
+      animate: "animate-logo-puls",
+      imageName: "JavaScript",
+    },
+    { image: "react", animate: "animate-spin-slow", imageName: "React" },
+    { image: "tailwind", animate: "animate-logo-puls", imageName: "Tailwind" },
+  ];
+
+  const tool = [
+    { image: "vscode", animate: "animate-logo-puls", imageName: "VSCode" },
+    { image: "github", animate: "animate-logo-puls", imageName: "Git" },
+    { image: "npm", animate: "animate-logo-puls", imageName: "NPM" },
+    { image: "webpack", animate: "animate-logo-puls", imageName: "" },
+    { image: "babel", animate: "animate-logo-puls", imageName: "" },
+  ];
+
+  return (
+    <div className="text-[var(--primary-color) ]">
+      <div className=" autoshow px-14 py-2">
+        <h2 className="text-[var(--primary-color)] text-4xl font-bold mb-4 ">
+          Skills
+        </h2>
+        <div className=" bg-[var(--secondbg-color)]  flex justify-around gap-8 p-8 rounded-lg">
+          {Skill.map((skill) => (
+            <div key={skill.imageName}>
+              <img
+                className={`w-24 object-contain ${skill.animate}`}
+                src={`./images/logo/${skill.image}-logo.png`}
+                alt={skill.imageName}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="autoshow px-14 py-2">
+        <h2 className="text-[var(--primary-color)] text-4xl font-bold mb-4">
+          Tool
+        </h2>
+        <div className="bg-[var(--secondbg-color)]  flex justify-around gap-8 p-8 rounded-lg">
+          {tool.map((tool) => (
+            <div key={tool.imageName}>
+              <img
+                className={`w-24 object-contain ${tool.animate}`}
+                src={`./images/logo/${tool.image}-logo.png`}
+                alt={tool.imageName}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Skills;
