@@ -9,7 +9,7 @@ import "../index.css";
 
 function Homepage() {
   return (
-    <div className="bg-gray-900 ">
+    <div className="bg-gray-900 w-100% overflow-hidden">
       <Nav />
       <Hero />
       <About />
