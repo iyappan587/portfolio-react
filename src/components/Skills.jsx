@@ -27,11 +27,11 @@ function Skills() {
         <h2 className="text-[var(--primary-color)] text-4xl font-bold mb-4 ">
           Skills
         </h2>
-        <div className=" bg-[var(--secondbg-color)]  flex justify-around gap-8 p-8 rounded-lg">
+        <div className=" bg-[var(--secondbg-color)] flex-wrap  flex justify-around gap-8 p-8 rounded-lg">
           {Skill.map((skill) => (
             <div key={skill.imageName}>
               <img
-                className={`w-24 object-contain ${skill.animate}`}
+                className={`w-10 object-contain ${skill.animate} md:w-24`}
                 src={`./images/logo/${skill.image}-logo.png`}
                 alt={skill.imageName}
               />
@@ -43,11 +43,11 @@ function Skills() {
         <h2 className="text-[var(--primary-color)] text-4xl font-bold mb-4">
           Tool
         </h2>
-        <div className="bg-[var(--secondbg-color)]  flex justify-around gap-8 p-8 rounded-lg">
+        <div className="bg-[var(--secondbg-color)]  flex-wrap flex justify-around gap-8 p-8 rounded-lg">
           {tool.map((tool) => (
             <div key={tool.imageName}>
               <img
-                className={`w-24 object-contain ${tool.animate}`}
+                className={`w-10 object-contain ${tool.animate} md:w-24`}
                 src={`./images/logo/${tool.image}-logo.png`}
                 alt={tool.imageName}
               />
