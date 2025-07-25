@@ -5,7 +5,7 @@ function Hero() {
         <div className="px-10 grid  rows-cols-2 gap-4  md:row-span-2 ">
           <p></p>
           <p className="text-sm gap-5 flex flex-col justify-center items-start text-[var(--sectext-color)] sm:text-md md:text-xl">
-            <h1 className="animate-text-pulse text-xl font-bold text-[var(--primary-color) sm:text-3xl]">
+            <h1 className="animate-text-pulse text-3xl font-bold text-[var(--primary-color) sm:text-3xl]">
               Hi, I'm Iyappan
             </h1>
             Web Developer Dedicated front-end developer with a strong foundation
@@ -22,7 +22,7 @@ function Hero() {
             </div>
           </p>
         </div>
-        <div className="max-w-sm mx-auto">
+        <div className="w-90 mx-auto">
           <img
             src="images/profile-image/iyappan22.png"
             alt="Iyappan's Profile"
