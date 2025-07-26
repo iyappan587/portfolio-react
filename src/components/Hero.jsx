@@ -1,11 +1,14 @@
 function Hero() {
-  const confirmDownload = window.confirm("Do you want to download the file?");
-  if (confirmDownload) {
-    const link = document.createElement("a");
-    link.href = "./images/resume/Iyappan_Resume.pdf";
-    link.download = "Iyappan_Resume.pdf";
-    link.click();
-  }
+  const handleDownload = () => {
+    const confirmDownload = window.confirm("Do you want to download the file?");
+    if (confirmDownload) {
+      const link = document.createElement("a");
+      link.href = "./images/resume/Iyappan_Resume.pdf";
+      link.download = "Iyappan_Resume.pdf";
+      link.click();
+    }
+  };
+
   return (
     <div>
       <ol className="grid justify-center  grid-cols-1 gap-4 md:grid-cols-2">
