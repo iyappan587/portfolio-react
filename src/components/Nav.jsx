@@ -5,7 +5,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "contact", href: "contact" },
+    { name: "social", href: "contact" },
     { name: "About", href: "about" },
     { name: "Skills", href: "skills" },
     { name: "Projects", href: "projects" },
@@ -75,7 +75,7 @@ function Nav() {
               duration={500}
               key={item.name}
               to={item.href}
-              className="block text-gray-700 hover:text-indigo-600 font-medium"
+              className="block text-gray-400 hover:text-indigo-600 font-bold"
             >
               {item.name}
             </Link>

@@ -1,8 +1,15 @@
 function Hero() {
+  const confirmDownload = window.confirm("Do you want to download the file?");
+  if (confirmDownload) {
+    const link = document.createElement("a");
+    link.href = "./images/resume/Iyappan_Resume.pdf";
+    link.download = "Iyappan_Resume.pdf";
+    link.click();
+  }
   return (
     <div>
-      <ol className="grid justify-center grid-flow-col-reverse grid-cols-1 gap-4 md:grid-cols-2">
-        <div className="px-10 grid  rows-cols-2 gap-4  md:row-span-2 ">
+      <ol className="grid justify-center  grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="px-10 grid  rows-cols-2 gap-4 ">
           <p></p>
           <p className="text-sm gap-5 flex flex-col justify-center items-start text-[var(--sectext-color)] sm:text-md md:text-xl">
             <h1 className="animate-text-pulse text-3xl font-bold text-[var(--primary-color) sm:text-3xl]">
@@ -15,18 +22,30 @@ function Hero() {
             Eager to expand back-end knowledge and grow into a full-stack
             development role.
             <div className="flex font-semibold gap-4 text-black md:font-bold">
-              <button className="bg-green-400 px-4 py-2 rounded-3xl hover:bg-green-600 ">
+              <button
+                onClick={handleDownload}
+                className="bg-green-400 px-4 py-2 rounded-3xl hover:bg-green-600 "
+              >
                 Download resume
               </button>
-              <button className="bg-green-400  px-4 py-2 rounded-3xl hover:bg-green-600">
+              <a
+                href="mailto:iyappansabari587@gmail.com"
+                className="bg-green-400  px-4 py-2 rounded-3xl hover:bg-green-600"
+              >
                 Contact
-              </button>
+              </a>
             </div>
           </p>
         </div>
-        <div className="w-90 mx-auto">
+        <div className="w-70  position relative flex ml-30 items-center sm:ml-30 md:ml-0 lg:ml-30  md:w-100 xss:ml-4">
           <img
-            src="images/profile-image/iyappan22.png"
+            className="position absolute rounded-lg z-10 "
+            src="images/profile-image/pf.png"
+            alt="Iyappan's Profile"
+          />
+          <img
+            className="animate-spin-slow "
+            src="images/profile-image/sec-bg3.png"
             alt="Iyappan's Profile"
           />
         </div>
