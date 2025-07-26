@@ -3,7 +3,7 @@ function Hero() {
     const confirmDownload = window.confirm("Do you want to iyappan's resume?");
     if (confirmDownload) {
       const link = document.createElement("a");
-      link.href = "./iyappan-resume-2025.pdf";
+      link.href = "./doc/iyappan-resume-2025.pdf";
       link.download = "Iyappan_Resume.pdf";
       link.click();
     }
