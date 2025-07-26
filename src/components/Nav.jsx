@@ -5,11 +5,11 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Project", href: "#project" },
-    { name: "Certification", href: "#certification" },
+    { name: "contact", href: "contact" },
+    { name: "About", href: "about" },
+    { name: "Skills", href: "skills" },
+    { name: "Projects", href: "projects" },
+    { name: "Certification", href: "certification" },
   ];
 
   return (
@@ -70,13 +70,15 @@ function Nav() {
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2">
           {menuItems.map((item) => (
-            <a
+            <Link
+              smooth={true}
+              duration={500}
               key={item.name}
-              href={item.href}
+              to={item.href}
               className="block text-gray-700 hover:text-indigo-600 font-medium"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
       )}
