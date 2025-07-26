@@ -5,11 +5,11 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const menuItems = [
-    { name: "contact", href: "#contact" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Certification", href: "#certification" },
+    { name: "contact", href: "contact" },
+    { name: "About", href: "about" },
+    { name: "Skills", href: "skills" },
+    { name: "Projects", href: "projects" },
+    { name: "Certification", href: "certification" },
   ];
 
   return (
