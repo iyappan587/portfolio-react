@@ -23,8 +23,8 @@ function Skills() {
 
   return (
     <div id="skills" className="text-[var(--primary-color) ]">
-      <div className=" autoshow px-14 py-2">
-        <h2 className="text-[var(--primary-color)] text-4xl font-bold mb-4 ">
+      <div className=" autoshow px-8 py-2 md:px-14">
+        <h2 className="text-[var(--primary-color)] text-2xl font-bold mb-4 md:text-4xl">
           Skills
         </h2>
         <div className=" bg-[var(--secondbg-color)] flex-wrap  flex justify-around gap-8 p-8 rounded-lg">
@@ -39,8 +39,8 @@ function Skills() {
           ))}
         </div>
       </div>
-      <div className="autoshow px-14 py-2">
-        <h2 className="text-[var(--primary-color)] text-4xl font-bold mb-4">
+      <div className="autoshow px-8 py-2 md:px-14">
+        <h2 className="text-[var(--primary-color)] text-2xl font-bold mb-4 md:text-4xl">
           Tool
         </h2>
         <div className="bg-[var(--secondbg-color)]  flex-wrap flex justify-around gap-8 p-8 rounded-lg">

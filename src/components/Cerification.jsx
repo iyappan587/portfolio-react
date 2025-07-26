@@ -18,8 +18,8 @@ export default function Cerification() {
   ];
 
   return (
-    <div id="certification" className=" px-14 py-2">
-      <h2 className="text-4xl  font-bold   text-[var(--primary-color)]">
+    <div id="certification" className=" px-8 py-2 md:px-14">
+      <h2 className="text-2xl font-bold text-[var(--primary-color)] md:text-4xl">
         Certificates
       </h2>
       <div className="overflow-hidden  py-4">

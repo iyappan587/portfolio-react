@@ -1,8 +1,8 @@
 function About() {
   return (
     <div id="about">
-      <div className="px-14 py-2 autoshow">
-        <h2 className="text-4xl font-bold mb-4  text-[var(--primary-color)]">
+      <div className="px-8 py-2 autoshow md:px-14">
+        <h2 className="text-2xl font-bold mb-4  text-[var(--primary-color)] md:text-4xl">
           About Me
         </h2>
         <p className="text-md  text-[var(--sectext-color)] md:tex-md lg:text-lg">

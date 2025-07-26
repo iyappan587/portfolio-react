@@ -21,9 +21,9 @@ function Project() {
   return (
     <div
       id="projects"
-      className="autoshow px-14 py-2 grid grid-cols-1 grid-rows-auto sm:grid-cols-2 md:grid-cols-3 gap-6"
+      className="autoshow px-8 py-2 grid grid-cols-1 grid-rows-auto sm:grid-cols-2 md:grid-cols-3  gap-6"
     >
-      <h2 className="text-4xl font-bold mb-4 text-[var(--primary-color)] sm:col-span-2 md:col-span-3">
+      <h2 className="text-2xl font-bold mb-2 text-[var(--primary-color)] sm:col-span-2 md:col-span-3 md:text-4xl">
         Projects
       </h2>
       {projects.map((project) => (
