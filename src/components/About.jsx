@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div>
+    <div id="about">
       <div className="px-14 py-2 autoshow">
         <h2 className="text-4xl font-bold mb-4  text-[var(--primary-color)]">
           About Me

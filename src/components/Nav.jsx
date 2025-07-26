@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
+
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,19 +16,20 @@ function Nav() {
     <nav className="bg-transparent  shadow-md p-4 w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          {/* Logo */}
           <div className="text-2xl font-bold text-indigo-600">MyPortfolio</div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             {menuItems.map((item) => (
-              <a
+              <Link
+                smooth={true}
+                duration={500}
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-gray-100 hover:text-indigo-600 font-medium"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 

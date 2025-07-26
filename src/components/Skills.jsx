@@ -22,7 +22,7 @@ function Skills() {
   ];
 
   return (
-    <div className="text-[var(--primary-color) ]">
+    <div id="skills" className="text-[var(--primary-color) ]">
       <div className=" autoshow px-14 py-2">
         <h2 className="text-[var(--primary-color)] text-4xl font-bold mb-4 ">
           Skills

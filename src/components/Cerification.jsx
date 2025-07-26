@@ -18,19 +18,16 @@ export default function Cerification() {
   ];
 
   return (
-    <div
-      className="autoshow 
-    "
-    >
-      <h2 class="text-4xl font-bold mb-4  text-[var(--primary-color)]">
+    <div id="certification" className=" px-14 py-2">
+      <h2 className="text-4xl  font-bold   text-[var(--primary-color)]">
         Certificates
       </h2>
-      <div className="overflow-hidden w-full py-4">
+      <div className="overflow-hidden  py-4">
         <div className="inline-flex animate-scroll">
           {fullSlides.map((slide, idx) => (
             <div
               key={`${slide.id}-${idx}`}
-              className={`w-60 h-40 mx-2 flex items-center justify-center rounded ${slide.bg}`}
+              className={`w-72 h-40 mx-2 flex items-center justify-center rounded`}
             >
               <img
                 src={`./images/certificates/${slide.image}.jpg`}

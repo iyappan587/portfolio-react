@@ -6,12 +6,14 @@ function Hero() {
           <p></p>
           <p className="text-sm gap-5 flex flex-col justify-center items-start text-[var(--sectext-color)] sm:text-md md:text-xl">
             <h1 className="animate-text-pulse text-3xl font-bold text-[var(--primary-color) sm:text-3xl]">
-              Hi, I'm Iyappan
+              Hi, I'm{" "}
+              <span className="text-[var(--primary-color)]">Iyappan</span>
             </h1>
-            Web Developer Dedicated front-end developer with a strong foundation
-            in HTML, CSS, and JavaScript, seeking to contribute to a dynamic
-            development team. Eager to expand back-end knowledge and grow into a
-            full-stack development role.
+            <span className="text-[var(--primary-color)]"> Web Developer</span>
+            Dedicated front-end developer with a strong foundation in HTML, CSS,
+            and JavaScript, seeking to contribute to a dynamic development team.
+            Eager to expand back-end knowledge and grow into a full-stack
+            development role.
             <div className="flex font-semibold gap-4 text-black md:font-bold">
               <button className="bg-green-400 px-4 py-2 rounded-3xl hover:bg-green-600 ">
                 Download resume
