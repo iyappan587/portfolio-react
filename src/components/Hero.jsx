@@ -40,7 +40,7 @@ function Hero() {
             </div>
           </p>
         </div>
-        <div className="w-70  position relative flex ml-30 items-center sm:ml-30 md:ml-0 lg:ml-30  md:w-100 xss:ml-4">
+        <div className="w-70  position relative flex ml-10 items-center sm:ml-30 md:ml-0 lg:ml-30  md:w-100 xss:ml-4">
           <img
             className="position absolute rounded-lg z-10 "
             src="images/profile-image/pf.png"
