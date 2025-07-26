@@ -1,9 +1,9 @@
 function Hero() {
   const handleDownload = () => {
-    const confirmDownload = window.confirm("Do you want to download the file?");
+    const confirmDownload = window.confirm("Do you want to iyappan's resume?");
     if (confirmDownload) {
       const link = document.createElement("a");
-      link.href = "./images/resume/Iyappan_Resume.pdf";
+      link.href = "./iyappan-resume-2025.pdf";
       link.download = "Iyappan_Resume.pdf";
       link.click();
     }
@@ -40,7 +40,7 @@ function Hero() {
             </div>
           </p>
         </div>
-        <div className="w-70  position relative flex ml-10 items-center sm:ml-30 md:ml-0 lg:ml-30  md:w-100 xss:ml-4">
+        <div className="w-70  position relative flex ml-10 items-center sm:ml-30 md:ml-0 lg:ml-30  md:w-100">
           <img
             className="position absolute rounded-lg z-10 "
             src="images/profile-image/pf.png"
